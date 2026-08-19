@@ -159,6 +159,7 @@
             <p class="program-caution">
                 プログラムは当日の天候によって変更となる場合があります。<br>
                 最新の情報はこのHPで公開しております。
+                また、陸上の詳細はパンフレットをご確認下さい。
             </p>
             <div class="program-container">
                 <div class="program-line-1">
@@ -176,9 +177,6 @@
                         <p class="program-bangou">2</p>
                         <p class="program-chousei">8:25</p>
                         <p class="program-chousei">陸上α
-                            <br>
-                            <span class="program-text-small">詳細はパンフレットを参照
-                            </span>
                         </p>
                     </div>
                     <div class="program-box2">
@@ -313,9 +311,6 @@
                         <p class="program-bangou">15</p>
                         <p class="program-chousei">14:33</p>
                         <p class="program-chousei">陸上β
-                            <br>
-                            <span class="program-text-small">詳細はパンフを参照
-                            </span>
                         </p>
                     </div>
                     <div class="program-box2">
@@ -341,9 +336,6 @@
                         <p class="program-bangou">18</p>
                         <p class="program-chousei">15:25</p>
                         <p class="program-chousei">陸上γ
-                            <br>
-                            <span class="program-text-small">詳しくはパンフを参照
-                            </span>
                         </p>
                     </div>
                     <div class="program-box1">
@@ -507,7 +499,7 @@
                     </h2>
                     <div class="slogan-text">
                         炎は温度が上がれば上がるほど、白い色に近づく。自分の熱を極限まで上げて、<ruby>燦然<rt>さんぜん</rt></ruby>たる<ruby>皡<rt>しろ</rt>
-                            </ruby>い炎で、全てを燃やし尽くそう。そして歴代の運動会を超えて俺たちだけの最高の景色を新たに創ろう。
+                        </ruby>い炎で、全てを燃やし尽くそう。そして歴代の運動会を超えて俺たちだけの最高の景色を新たに創ろう。
                     </div>
                 </div>
                 <div class="block-theme">
@@ -797,7 +789,7 @@
         <div class="map-page page">
             <h1 class="section-midashi">マップ・会場図・お願い</h1>
             <div class="kaijozu">
-                <img src="./images/r08_undou_032_kaijozu.png">
+                <img src="./images/r08_undou_032_kaijozu.jpg">
             </div>
             <iframe class="googlemap"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8249999960913!2d130.356341!3d33.5838927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354193a435436e39%3A0x27c45e52483debbe!2z56aP5bKh55yM56uL5L-u54y36aSo6auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1766908186345!5m2!1sja!2sjp"
@@ -1042,6 +1034,13 @@
             margin: 20px auto;
         }
 
+        .daiji img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
         .day {
             margin: 0 auto;
             text-align: center;
@@ -1224,6 +1223,7 @@
         .nekketsu-image {
             width: 30%;
             margin: 0 auto;
+            max-height: 500px;
         }
 
         .nekketsu-text {
@@ -1726,7 +1726,7 @@
             position: absolute;
             font-family: "Font Awesome 5 Free", 'Quicksand', 'Avenir', 'Arial', sans-serif;
             font-weight: 900;
-            content: 'タンブリングテーマ';
+            content: 'タンブテーマ';
             background: #E8DCC8;
             color: #2E2418;
             left: 0px;
@@ -1813,7 +1813,7 @@
             position: absolute;
             font-family: "Font Awesome 5 Free", 'Quicksand', 'Avenir', 'Arial', sans-serif;
             font-weight: 900;
-            content: '応援コンテストテーマ';
+            content: '応コンテーマ';
             background: #E8DCC8;
             color: #2E2418;
             left: 0px;
@@ -1929,7 +1929,8 @@
         .kaijozu {
             display: block;
             margin: 0 auto;
-            width: fit-content;
+            max-width: 90%;
+            max-height: 50vw;
         }
 
         .googlemap {
